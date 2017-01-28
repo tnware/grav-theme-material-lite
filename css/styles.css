@@ -23,7 +23,7 @@
           flex-shrink: 0;
 }
 
-.main {
+.mdl-main {
   margin-top: -35vh;
   -webkit-flex-shrink: 0;
       -ms-flex-negative: 0;
