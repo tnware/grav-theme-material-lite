@@ -34,13 +34,13 @@
   padding-left: 40px;
 }
 
-.demo-container {
+.mdl-container {
   max-width: 1600px;
   width: calc(100% - 16px);
   margin: 0 auto;
 }
 
-.demo-content {
+.mdl-content {
   border-radius: 2px;
   padding: 80px 56px;
   margin-bottom: 80px;
