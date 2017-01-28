@@ -46,11 +46,11 @@
   margin-bottom: 80px;
 }
 
-.demo-layout.is-small-screen .demo-content {
+.demo-layout.is-small-screen .mdl-content {
   padding: 40px 28px;
 }
 
-.demo-content h3 {
+.mdl-content h3 {
   margin-top: 48px;
 }
 
