@@ -99,10 +99,7 @@
           {% if crumbs | length > 1 or config.plugins.breadcrumbs.show_all %}
               <div class="container">
                   {% for crumb in crumbs %}
-                      <a href="{{ crumb.url }}" class="mdl-color-text--grey-500">
-                          {{ crumb.menu }}
-                      </a>
-                      &gt;
+                  &nbsp; &gt; &nbsp;<a href="{{ crumb.url }}" class="mdl-color-text--grey-500">{{ crumb.menu }}</a>
                   {% endfor %}
               </div>
           {% endif %}
@@ -115,25 +112,38 @@
   {% endblock %}
 
         {% block footer %}
-        <footer class="demo-footer mdl-mini-footer">
-          <div class="mdl-mini-footer--left-section">
-            <ul class="mdl-mini-footer--link-list">
 
-              {% for page in pages.children %}
-                  {% if page.visible %}
-                      {% set current_page = (page.active or page.activeChild)
-                          ? 'active'
-                          : '' %}
-                      <li>
-                          <a href="{{ page.url }}">{{ page.menu }}</a>
-                      </li>
-                  {% endif %}
-              {% endfor %}
+<footer class="mdl-mega-footer">
+  <div class="mdl-mega-footer__middle-section">
 
-            </ul>
-            Theme by <a href="https://getmdl.io/">MDL</a> ported for GravCMS by <a href="https://tylermade.net">Tyler Woods</a>.
-          </div>
-        </footer>
+    <div class="mdl-mega-footer__drop-down-section">
+      <input class="mdl-mega-footer__heading-checkbox" type="checkbox" checked>
+      <h1 class="mdl-mega-footer__heading">Navigation</h1>
+      <ul class="mdl-mega-footer__link-list">
+        {% for page in pages.children %}
+            {% if page.visible %}
+                {% set current_page = (page.active or page.activeChild)
+                    ? 'active'
+                    : '' %}
+                <li><a href="{{ page.url }}">{{ page.menu }}</a></li>
+            {% endif %}
+        {% endfor %}
+      </ul>
+    </div>
+
+
+
+  </div>
+
+  <div class="mdl-mega-footer__bottom-section">
+    <div class="mdl-logo">{{ site.title }}</div>
+    Theme by <a href="https://getmdl.io/">MDL</a> ported for GravCMS by <a href="https://tylermade.net">Tyler Woods</a>.
+  </div>
+
+</footer>
+
+
+
         {% endblock %}
       </main>
     </div>
