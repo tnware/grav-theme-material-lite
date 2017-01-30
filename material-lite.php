@@ -3,7 +3,7 @@ namespace Grav\Theme;
 
 use Grav\Common\Theme;
 
-class Mdux extends Theme
+class MaterialLite extends Theme
 {
     // Access plugin events in this class
 }
