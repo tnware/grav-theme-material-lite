@@ -1,3 +1,13 @@
+# v0.1.2
+##  01/28/2017
+
+1. [](#new)
+
+2. [](#improved)
+
+3. [](#bugfix)
+    * removed broken demo link
+
 # v0.1.1
 ##  01/28/2017
 
