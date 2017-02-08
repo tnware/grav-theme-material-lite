@@ -1,3 +1,14 @@
+# v0.1.3
+##  02/8/2017
+
+1. [](#new)
+    * spirit (:
+2. [](#improved)
+    * FontAwesome 4.5 -> 4.7
+
+3. [](#bugfix)
+    * image overflows
+
 # v0.1.2
 ##  01/28/2017
 
