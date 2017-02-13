@@ -1,0 +1,35 @@
+<div class="card-wide mdl-card mdl-shadow--2dp">
+  <div class="mdl-card__title">
+    <h2 class="p-name"><a href="{{ page.url }}" class="u-url">{{ page.title }}</a></h2>
+  </div>
+  <div class="mdl-card__supporting-text">
+
+  <span class="list-blog-date">
+      <time class="dt-published" datetime="{{ page.date|date("c") }}">
+          <span>{{ page.date|date("d") }}</span>
+          <em>{{ page.date|date("M") }}</em>
+      </time>
+  </span>
+
+  <div class="e-content">
+      {{ page.content }}
+  </div>
+
+  </div>
+  <div class="mdl-card__actions mdl-card--border">
+    <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" href="{{page.url}}">
+    Read more...
+    </a>
+  </div>
+  <div class="mdl-card__menu">
+    <button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect">
+      <i class="material-icons">share</i>
+    </button>
+  </div>
+</div>
+
+{% if config.plugins.comments.enabled %}
+    {% include 'partials/comments.html.twig' %}
+{% endif %}
+
+<br>
