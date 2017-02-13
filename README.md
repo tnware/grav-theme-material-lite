@@ -6,6 +6,8 @@
 
 Material Lite has few features aside from base design.
 
+2/13/2017 - Added support for blog pages
+
 ### Plugins:
 Breadcrumbs Plugin Support
  - adds breadcrumbs above page title in each page

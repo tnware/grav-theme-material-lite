@@ -2,9 +2,9 @@
 ##  02/13/2017
 
 1. [](#new)
-    * page title added in h2 format
+    * blog
 2. [](#improved)
-    *
+    * page title added in h2 format
 3. [](#bugfix)
     * 
 
