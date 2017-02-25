@@ -1,3 +1,9 @@
+# v0.1.5
+##  02/25/2017
+
+1. [](#improved)
+    * CSS
+
 # v0.1.4
 ##  02/13/2017
 
@@ -6,7 +12,7 @@
 2. [](#improved)
     * page title added in h2 format
 3. [](#bugfix)
-    * 
+    *
 
 # v0.1.3
 ##  02/8/2017
