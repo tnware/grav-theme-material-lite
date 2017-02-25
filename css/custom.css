@@ -178,26 +178,3 @@ blockquote {
 ::selection {
   background-color: #e8eaf6;
 }
-
-/*Scrollbar becomes nice & blue*/
-
--webkit-scrollbar {
-    width: 0;
-}
-
-::-webkit-scrollbar {
-    width: 8px;
-}
-
-::-webkit-scrollbar-thumb {
-    background-color: #3E4095 ;
-    border-radius: 4px;
-}
-
-::-webkit-scrollbar-thumb:hover {
-    background-color: #3E4095
-}
-
-::-webkit-scrollbar-track {
-    background-color: #ededed;
-}
