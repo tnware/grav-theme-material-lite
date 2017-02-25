@@ -173,3 +173,8 @@ blockquote {
 .main-nav .has-children .has-children > a:after {
     content: '\f105';
 }
+
+/*Small Visual Fix :: selection*/
+::selection {
+  background-color: #e8eaf6;
+}
