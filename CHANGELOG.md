@@ -1,8 +1,12 @@
 # v0.1.5
 ##  02/25/2017
 
-1. [](#improved)
+1. [](#new)
+    * nice blue scrollbar
+2. [](#improved)
     * CSS
+3. [](#bugfix)
+    * `<pre>` overflow
 
 # v0.1.4
 ##  02/13/2017
