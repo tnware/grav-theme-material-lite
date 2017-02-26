@@ -5,6 +5,7 @@
     * nice blue scrollbar
 2. [](#improved)
     * CSS
+    * blockquote style
 3. [](#bugfix)
     * `<pre>` overflow
 
