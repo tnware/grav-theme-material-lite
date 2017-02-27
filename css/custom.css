@@ -1,4 +1,5 @@
 /* Core Stuff */
+
 * {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -11,12 +12,7 @@ body {
     color: #606d6e;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h1, h2, h3, h4, h5, h6 {
     color: #454B4D;
 }
 
@@ -42,7 +38,9 @@ blockquote {
     padding: 0 2rem;
 }
 
+
 /* Utility Classes */
+
 .wrapper {
     margin: 0 3rem;
 }
@@ -71,7 +69,9 @@ blockquote {
     text-align: left;
 }
 
+
 /* Content Styling */
+
 .header .padding {
     padding: 1rem 0;
 }
@@ -94,7 +94,9 @@ blockquote {
     background-color: #eee;
 }
 
+
 /* Menu Settings */
+
 .main-nav ul {
     text-align: center;
     letter-spacing: -1em;
@@ -116,23 +118,31 @@ blockquote {
     white-space: nowrap;
 }
 
-.main-nav > ul > li > a {
+.main-nav>ul>li>a {
     border-radius: 2px;
 }
 
+
 /*Active dropdown nav item */
-.main-nav ul li:hover > a {
+
+.main-nav ul li:hover>a {
     background-color: #175E91;
 }
 
+
 /* Selected Dropdown nav item */
-.main-nav ul li.selected > a {
+
+.main-nav ul li.selected>a {
     background-color: #fff;
     color: #175E91;
 }
 
+
 /* Dropdown CSS */
-.main-nav ul li {position: relative;}
+
+.main-nav ul li {
+    position: relative;
+}
 
 .main-nav ul li ul {
     position: absolute;
@@ -140,29 +150,36 @@ blockquote {
     min-width: 100%;
     text-align: left;
     z-index: 999;
-
     display: none;
 }
+
 .main-nav ul li ul li {
     display: block;
 }
 
+
 /* Dropdown CSS */
+
 .main-nav ul li ul ul {
     left: 100%;
     top: 0;
 }
 
+
 /* Active on Hover */
-.main-nav li:hover > ul {
+
+.main-nav li:hover>ul {
     display: block;
 }
 
+
 /* Child Indicator */
-.main-nav .has-children > a {
+
+.main-nav .has-children>a {
     padding-right: 30px;
 }
-.main-nav .has-children > a:after {
+
+.main-nav .has-children>a:after {
     font-family: FontAwesome;
     content: '\f107';
     position: absolute;
@@ -171,14 +188,17 @@ blockquote {
     top: 0;
 }
 
-.main-nav .has-children .has-children > a:after {
+.main-nav .has-children .has-children>a:after {
     content: '\f105';
 }
 
+
 /*Small Visual Fix :: selection*/
+
 ::selection {
-  background-color: #e8eaf6;
+    background-color: #e8eaf6;
 }
+
 
 /*Scrollbar becomes nice & blue*/
 
@@ -191,7 +211,7 @@ blockquote {
 }
 
 ::-webkit-scrollbar-thumb {
-    background-color: #3E4095 ;
+    background-color: #3E4095;
     border-radius: 4px;
 }
 
