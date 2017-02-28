@@ -209,15 +209,18 @@ blockquote {
 
 /*Scroll to top*/
 .scrollup {
-    color: ##e8eaf6;
+    color: #e8eaf6;
     font-size: 40px;
     text-align: center;
     line-height: 40px;
     width: 40px;
     height: 40px;
     position: fixed;
-    display: none;
+    display: block;
     bottom: 20px;
     right: 20px;
     z-index: 999;
+}
+.scrollup:hover {
+    color:lavender;
 }
