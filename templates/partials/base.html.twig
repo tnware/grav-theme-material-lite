@@ -64,6 +64,16 @@
                 <!-- Navigation. We hide it in small screens. -->
                 <nav class="mdl-navigation mdl-layout--large-screen-only">
                     {% include 'partials/navigation.html.twig' %}
+                    <a class="mdl-navigation__link" id="version-dropdown">
+              Dropdown
+              <i class="material-icons">arrow_drop_down</i>
+            </a>
+            <ul class="mdl-menu mdl-js-menu mdl-menu--bottom-right mdl-js-ripple-effect" for="version-dropdown">
+              <li class="mdl-menu__item">Link</li>
+              <li class="mdl-menu__item">Link</li>
+              <li class="mdl-menu__item">Link</li>
+              <li class="mdl-menu__item">Link</li>
+            </ul>
                 </nav>
             </div>
         </header>
@@ -71,6 +81,11 @@
             <span class="mdl-layout-title">{{ site.title }}</span>
             <nav class="mdl-navigation">
                 {% include 'partials/drawer.html.twig' %}
+                <span class="mdl-navigation__link" href="">Dropdown</span>
+<a class="mdl-navigation__link" href=""><i class="fa fa-caret-right" aria-hidden="true">&nbsp;</i>Link</a>
+<a class="mdl-navigation__link" href=""><i class="fa fa-caret-right" aria-hidden="true">&nbsp;</i>Link</a>
+<a class="mdl-navigation__link" href=""><i class="fa fa-caret-right" aria-hidden="true">&nbsp;</i>Link</a>
+<a class="mdl-navigation__link" href=""><i class="fa fa-caret-right" aria-hidden="true">&nbsp;</i>Link</a>
             </nav>
         </div>
         {% endblock %}
