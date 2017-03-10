@@ -81,7 +81,7 @@
             {% block body %}
             <div class="mdl-container mdl-grid">
                 <div class="mdl-cell mdl-cell--1-col mdl-cell--hide-tablet mdl-cell--hide-phone"></div>
-                <div class="mdl-content mdl-color--white mdl-shadow--4dp content mdl-color-text--grey-800 mdl-cell mdl-cell--8-col mdl-cell--1-offset">
+                <div class="mdl-content mdl-color--white mdl-shadow--4dp content mdl-color-text--grey-800 mdl-cell mdl-cell--8-col">
                     {% if config.plugins.breadcrumbs.enabled %}
                     <div class="demo-crumbs mdl-color-text--grey-500">
                         {% set crumbs = breadcrumbs.get() %} {% if crumbs | length > 1 or config.plugins.breadcrumbs.show_all %}
@@ -92,10 +92,8 @@
                     </div>
                     {% endif %}
 
-                  <div class="mdl-cell--8-col mdl-cell--2-offset">
-                    <h2 class="entry-title single">{{ page.header.title }}</h2> 
-                    {% block content %}{% endblock %}
-                  </div>
+                      <h2 class="entry-title single">{{ page.header.title }}</h2>
+                      {% block content %}{% endblock %}
                 </div>
             </div>
             {% endblock %} {% block footer %}
