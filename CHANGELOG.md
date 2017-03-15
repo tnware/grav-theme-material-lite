@@ -4,12 +4,13 @@
 1. [](#new)
     * link underline style
     * scroll to top
+    * favicon
 2. [](#improved)
     *
     *
 3. [](#bugfix)
     *
-    * 
+    *
 
 # v0.1.5
 ##  02/25/2017
