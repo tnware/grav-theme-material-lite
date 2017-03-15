@@ -1,16 +1,17 @@
+# v0.1.7
+##  03/15/2017
+
+1. [](#new)
+    * favicon
+2. [](#improved)
+    * social icons
+
 # v0.1.6
 ##  03/10/2017
 
 1. [](#new)
     * link underline style
     * scroll to top
-    * favicon
-2. [](#improved)
-    *
-    *
-3. [](#bugfix)
-    *
-    *
 
 # v0.1.5
 ##  02/25/2017

@@ -7,6 +7,7 @@
 Material Lite has few features aside from base design.
 
 2/13/2017 - Added support for blog pages
+3/15/2017 - Added support for social icons in Footer
 
 ### Plugins:
 Breadcrumbs Plugin Support
