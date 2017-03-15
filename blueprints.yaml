@@ -24,3 +24,31 @@ form:
           0: Disabled
         validate:
           type: bool
+    fburl:
+        type: text
+        size: medium
+        label: Primary Color
+        default: 'https://facebook.com/'
+        validate:
+          type: text
+    gplusurl:
+        type: text
+        size: medium
+        label: Primary Color
+        default: 'https://google.com/'
+        validate:
+          type: text
+    linkedinurl:
+        type: text
+        size: medium
+        label: Primary Color
+        default: 'https://linkedin.com/'
+        validate:
+          type: text
+    twitterurl:
+        type: text
+        size: medium
+        label: Primary Color
+        default: 'https://twitter.com/'
+        validate:
+          type: text

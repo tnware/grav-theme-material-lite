@@ -64,7 +64,7 @@
                 <!-- Navigation. We hide it in small screens. -->
                 <nav class="mdl-navigation mdl-layout--large-screen-only">
                     {% include 'partials/navigation.html.twig' %}
-                    <a class="mdl-navigation__link" id="version-dropdown">
+<!--                    <a class="mdl-navigation__link" id="version-dropdown">
               Dropdown
               <i class="material-icons">arrow_drop_down</i>
             </a>
@@ -74,6 +74,7 @@
               <li class="mdl-menu__item">Link</li>
               <li class="mdl-menu__item">Link</li>
             </ul>
+            --->
                 </nav>
             </div>
         </header>
@@ -81,12 +82,12 @@
             <span class="mdl-layout-title">{{ site.title }}</span>
             <nav class="mdl-navigation">
                 {% include 'partials/drawer.html.twig' %}
-                <span class="mdl-navigation__link" href="">Dropdown</span>
+<!--                <span class="mdl-navigation__link" href="">Dropdown</span>
 <a class="mdl-navigation__link" href=""><i class="fa fa-caret-right" aria-hidden="true">&nbsp;</i>Link</a>
 <a class="mdl-navigation__link" href=""><i class="fa fa-caret-right" aria-hidden="true">&nbsp;</i>Link</a>
 <a class="mdl-navigation__link" href=""><i class="fa fa-caret-right" aria-hidden="true">&nbsp;</i>Link</a>
 <a class="mdl-navigation__link" href=""><i class="fa fa-caret-right" aria-hidden="true">&nbsp;</i>Link</a>
-            </nav>
+--->            </nav>
         </div>
         {% endblock %}
 
@@ -131,10 +132,10 @@
                        <input class="mdl-mega-footer__heading-checkbox" type="checkbox" checked>
                        <h1 class="mdl-mega-footer__heading">Social Media</h1>
                          <ul class="mdl-mega-footer__link-list">
-                          <li><a href="http://facebook.com/"><i class="fa fa-facebook fa-2x"></i></a></li>
-                          <li><a href="http://linkedin.com/"><i class="fa fa-linkedin fa-2x"></i></a></li>
-                          <li><a href="http://twitter.com/"><i class="fa fa-twitter fa-2x"></i></a></li>
-                          <li><a href="http://plus.google.com/"><i class="fa fa-google-plus fa-2x"></i> </a></li>
+                          <li><a href="{{ config.theme.fburl }}"><i class="fa fa-facebook fa-2x"></i></a></li>
+                          <li><a href="{{ config.theme.linkedinurl }}"><i class="fa fa-linkedin fa-2x"></i></a></li>
+                          <li><a href="{{ config.theme.twitterurl }}"><i class="fa fa-twitter fa-2x"></i></a></li>
+                          <li><a href="{{ config.theme.gplusurl }}"><i class="fa fa-google-plus fa-2x"></i> </a></li>
                         </ul>
                     </div>
                     {% endif %}
