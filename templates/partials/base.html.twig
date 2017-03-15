@@ -25,6 +25,7 @@
 </head>
 
 <body>
+<!--- Header --->
     {% block header %}
     <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
         <header class="mdl-layout__header">
@@ -36,17 +37,6 @@
                 <!-- Navigation. We hide it in small screens. -->
                 <nav class="mdl-navigation mdl-layout--large-screen-only">
                     {% include 'partials/navigation.html.twig' %}
-<!--                    <a class="mdl-navigation__link" id="version-dropdown">
-              Dropdown
-              <i class="material-icons">arrow_drop_down</i>
-            </a>
-            <ul class="mdl-menu mdl-js-menu mdl-menu--bottom-right mdl-js-ripple-effect" for="version-dropdown">
-              <li class="mdl-menu__item">Link</li>
-              <li class="mdl-menu__item">Link</li>
-              <li class="mdl-menu__item">Link</li>
-              <li class="mdl-menu__item">Link</li>
-            </ul>
-            --->
                 </nav>
             </div>
         </header>
@@ -54,18 +44,16 @@
             <span class="mdl-layout-title">{{ site.title }}</span>
             <nav class="mdl-navigation">
                 {% include 'partials/drawer.html.twig' %}
-<!--                <span class="mdl-navigation__link" href="">Dropdown</span>
-<a class="mdl-navigation__link" href=""><i class="fa fa-caret-right" aria-hidden="true">&nbsp;</i>Link</a>
-<a class="mdl-navigation__link" href=""><i class="fa fa-caret-right" aria-hidden="true">&nbsp;</i>Link</a>
-<a class="mdl-navigation__link" href=""><i class="fa fa-caret-right" aria-hidden="true">&nbsp;</i>Link</a>
-<a class="mdl-navigation__link" href=""><i class="fa fa-caret-right" aria-hidden="true">&nbsp;</i>Link</a>
---->            </nav>
+            </nav>
         </div>
         {% endblock %}
 
         <div class="mdl-ribbon"></div>
         <main class="mdl-main mdl-layout__content">
 <a name="top"></a>
+
+<!--- Body --->
+
             {% block body %}
             <div class="mdl-container mdl-grid">
                 <div class="mdl-cell mdl-cell--2-col mdl-cell--hide-tablet mdl-cell--hide-phone"></div>
@@ -86,16 +74,21 @@
             </div>
             {% endblock %}
 
+<!--- Footer --->
+
             {% block footer %}
                 {% include 'partials/footer.html.twig' %}
             {% endblock %}
+
         </main>
     </div>
 
-<a href="#top" id="corner-box" class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored"><i class="material-icons">expand_less</i></a>
+  <a href="#top" id="corner-box" class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored"><i class="material-icons">expand_less</i></a>
     <script src="user/themes/material-lite/js/material.min.js"></script>
 
-    {% block bottom %} {{ assets.js('bottom') }} {% endblock %}
+    {% block bottom %}
+      {{ assets.js('bottom') }}
+    {% endblock %}
 </body>
 
 </html>
