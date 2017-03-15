@@ -1,0 +1,42 @@
+<footer class="mdl-mega-footer">
+    <div class="mdl-mega-footer__middle-section">
+
+        <div class="mdl-mega-footer__drop-down-section">
+            <input class="mdl-mega-footer__heading-checkbox" type="checkbox" checked>
+            <h1 class="mdl-mega-footer__heading">Navigation</h1>
+            <ul class="mdl-mega-footer__link-list">
+                {% for page in pages.children %} {% if page.visible %} {% set current_page = (page.active or page.activeChild) ? 'active' : '' %}
+                <li><a href="{{ page.url }}">{{ page.menu }}</a></li>
+                {% endif %} {% endfor %}
+            </ul>
+        </div>
+
+        {% if config.theme.social.enabled %}
+        <div class="mdl-mega-footer__drop-down-section">
+           <input class="mdl-mega-footer__heading-checkbox" type="checkbox" checked>
+           <h1 class="mdl-mega-footer__heading">Social Media</h1>
+             <ul class="mdl-mega-footer__link-list">
+              <li><a href="{{ config.theme.fburl }}"><i class="fa fa-facebook fa-2x"></i></a></li>
+              <li><a href="{{ config.theme.linkedinurl }}"><i class="fa fa-linkedin fa-2x"></i></a></li>
+              <li><a href="{{ config.theme.twitterurl }}"><i class="fa fa-twitter fa-2x"></i></a></li>
+              <li><a href="{{ config.theme.gplusurl }}"><i class="fa fa-google-plus fa-2x"></i> </a></li>
+            </ul>
+        </div>
+        {% endif %}
+
+        <div class="mdl-mega-footer__drop-down-section">
+            <input class="mdl-mega-footer__heading-checkbox" type="checkbox" checked>
+        <a class="mdl-typography--font-light" href="#top">
+                        Back to Top
+                        <i class="material-icons">expand_less</i>
+                      </a>
+        </div>
+
+    </div>
+
+    <div class="mdl-mega-footer__bottom-section">
+        <div class="mdl-logo">{{ site.title }}</div>
+        Theme by <a href="https://getmdl.io/">MDL</a> ported for GravCMS by <a href="https://tylermade.net">Tyler Woods</a>.
+    </div>
+
+</footer>
