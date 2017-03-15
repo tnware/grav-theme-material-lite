@@ -17,7 +17,7 @@
 -->
 <html lang="en">
 
-<head>
+<head>{% set theme_config = attribute(config.themes, config.system.pages.theme) %}
     {% block head %}
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -126,6 +126,7 @@
                         </ul>
                     </div>
 
+                    {% if config.theme.social.enabled %}
                     <div class="mdl-mega-footer__drop-down-section">
                        <input class="mdl-mega-footer__heading-checkbox" type="checkbox" checked>
                        <h1 class="mdl-mega-footer__heading">Social Media</h1>
@@ -136,6 +137,7 @@
                           <li><a href="http://plus.google.com/"><i class="fa fa-google-plus fa-2x"></i> </a></li>
                         </ul>
                     </div>
+                    {% endif %}
 
                     <div class="mdl-mega-footer__drop-down-section">
                         <input class="mdl-mega-footer__heading-checkbox" type="checkbox" checked>

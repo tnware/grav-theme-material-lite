@@ -14,13 +14,13 @@ license: MIT
 form:
   validation: loose
   fields:
-    dropdown.enabled:
+    social.enabled:
         type: toggle
-        label: Dropdown in Menu
+        label: Social Icons in Footer
         highlight: 1
         default: 1
         options:
-          1: PLUGIN_ADMIN.ENABLED
-          0: PLUGIN_ADMIN.DISABLED
+          1: Enabled
+          0: Disabled
         validate:
           type: bool
