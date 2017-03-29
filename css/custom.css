@@ -219,27 +219,24 @@ blockquote {
   background-color: #e8eaf6;
 }
 
-/*Scrollbar becomes nice & blue*/
+/*Nice scrollbar*/
 
 -webkit-scrollbar {
     width: 0;
 }
 
 ::-webkit-scrollbar {
-    width: 8px;
+    width: 7px;
+    height: 7px;
 }
-
+ 
 ::-webkit-scrollbar-thumb {
-    background-color: #3E4095;
-    border-radius: 4px;
+    background-color: #fcebd5;
+    border:2.5px solid #424242;
 }
-
-::-webkit-scrollbar-thumb:hover {
-    background-color: #3E4095
-}
-
+ 
 ::-webkit-scrollbar-track {
-    background-color: #ededed;
+    background-color: #424242;
 }
 
 #corner-box {
