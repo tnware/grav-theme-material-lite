@@ -27,28 +27,28 @@ form:
     fburl:
         type: text
         size: medium
-        label: Primary Color
+        label: Facebook
         default: 'https://facebook.com/'
         validate:
           type: text
     gplusurl:
         type: text
         size: medium
-        label: Primary Color
+        label: Google
         default: 'https://google.com/'
         validate:
           type: text
     linkedinurl:
         type: text
         size: medium
-        label: Primary Color
+        label: Linkedin
         default: 'https://linkedin.com/'
         validate:
           type: text
     twitterurl:
         type: text
         size: medium
-        label: Primary Color
+        label: Twitter
         default: 'https://twitter.com/'
         validate:
           type: text
