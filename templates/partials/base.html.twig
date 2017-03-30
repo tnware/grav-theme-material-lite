@@ -25,7 +25,7 @@
 </head>
 
 <body>
-<!--- Header --->
+<!-- Header -->
     {% block header %}
     <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
         <header class="mdl-layout__header">
@@ -52,7 +52,7 @@
         <main class="mdl-main mdl-layout__content">
 <a name="top"></a>
 
-<!--- Body --->
+<!-- Body -->
 
             {% block body %}
             <div class="mdl-container mdl-grid">
@@ -67,20 +67,23 @@
                         {% endif %}
                     </div>
                     {% endif %}
-
-                      <h2 class="entry-title single">{{ page.header.title }}</h2>
-                      {% block content %}{% endblock %}
-                </div>
+                      
+                      <!-- centers content with offset » change width with different columns to your preference -->
+                      
+                      <div class="mdl-cell--10-col mdl-cell--1-offset">
+                        <h2 class="entry-title single">{{ page.header.title }}</h2>
+                        {% block content %}{% endblock %}
+                      </div>
             </div>
             {% endblock %}
-
-<!--- Footer --->
+</main>
+<!-- Footer -->
 
             {% block footer %}
                 {% include 'partials/footer.html.twig' %}
             {% endblock %}
 
-        </main>
+        
     </div>
 
   <a href="#top" id="corner-box" class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored"><i class="material-icons">expand_less</i></a>
