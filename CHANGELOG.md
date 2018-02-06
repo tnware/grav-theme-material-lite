@@ -1,3 +1,13 @@
+# v0.1.8
+##  02/06/2018
+1. [](#new)
+   * font-awesome 5
+2. [](#improved)
+   * better content centering
+   * bigger social icons
+   * added discord
+   * better color scheme
+
 # v0.1.7
 ##  03/15/2017
 
