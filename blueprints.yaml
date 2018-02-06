@@ -52,3 +52,10 @@ form:
         default: 'https://twitter.com/'
         validate:
           type: text
+    discordurl:
+        type: text
+        size: medium
+        label: Discord
+        default: 'https://discord.gg/'
+        validate:
+          type: text
