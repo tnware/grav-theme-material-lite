@@ -248,3 +248,9 @@ blockquote {
   margin-bottom: 40px;
   z-index: 900;
 }
+.ui-x
+{display: flex;
+justify-content: center;
+}
+ul.mdl-mega-footer__link-list li
+{margin:2px;}
