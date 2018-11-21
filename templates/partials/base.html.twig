@@ -62,8 +62,10 @@
                     <div class="demo-crumbs mdl-color-text--grey-500">
                         {% set crumbs = breadcrumbs.get() %} {% if crumbs | length > 1 or config.plugins.breadcrumbs.show_all %}
                         <div class="container">
-                            {% for crumb in crumbs %} &nbsp; &gt; &nbsp;<a href="{{ crumb.url }}" class="mdl-color-text--grey-500">{{ crumb.menu }}</a> {% endfor %}
-                        </div>
+            {% for crumb in crumbs %} 
+                &nbsp; {{ loop.first ?: '&rsaquo;' }} &nbsp;<a href="{{ crumb.url }}" class="mdl-color-text--grey-500">{{ crumb.menu }}</a> 
+            {% endfor %}
+            </div>
                         {% endif %}
                     </div>
                     {% endif %}
