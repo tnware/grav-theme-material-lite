@@ -254,3 +254,5 @@ justify-content: center;
 }
 ul.mdl-mega-footer__link-list li
 {margin:2px;}
+
+.fix{position: fixed}
