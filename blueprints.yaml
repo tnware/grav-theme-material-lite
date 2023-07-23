@@ -28,34 +28,34 @@ form:
         type: text
         size: medium
         label: Facebook
-        default: 'https://facebook.com/'
+        prepend: 'https://facebook.com/'
         validate:
           type: text
     gplusurl:
         type: text
         size: medium
         label: Google
-        default: 'https://google.com/'
+        prepend: 'https://google.com/'
         validate:
           type: text
     linkedinurl:
         type: text
         size: medium
         label: Linkedin
-        default: 'https://linkedin.com/'
+        prepend: 'https://linkedin.com/'
         validate:
           type: text
     twitterurl:
         type: text
         size: medium
         label: Twitter
-        default: 'https://twitter.com/'
+        prepend: 'https://twitter.com/'
         validate:
           type: text
     discordurl:
         type: text
         size: medium
         label: Discord
-        default: 'https://discord.gg/'
+        prepend: 'https://discord.gg/'
         validate:
           type: text
