@@ -24,8 +24,22 @@
 <!--
 <link rel="canonical" href="http://www.example.com/">
 -->
-{% block stylesheets %} {% do assets.addCss('theme://css/materiallite.css', 100) %} {% do assets.addCss('https://use.fontawesome.com/releases/v5.0.6/css/all.css', 99) %} {% do assets.addCss('theme://css/styles.css', 98) %} {% do assets.addCss('theme://css/custom.css',
-97) %}
+{% block stylesheets  %}
+
+{% do assets.addCss('theme://css/materiallite.css') %}
+{% do assets.addCss('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css') %}
+{% do assets.addCss('theme://css/styles.css') %}
+{% do assets.addCss('theme://css/custom.css') %}
+
+{% endblock %}
 
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
-<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"> {% endblock %} {{ assets.css() }} {% block javascripts %} {% do assets.addJs('jquery', 100) %} {% endblock %} {{ assets.js() }}
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+{{ assets.css()|raw }}
+
+{% block javascripts %}
+{% do assets.addJs('jquery') %}
+{% endblock %}
+
+{{ assets.js()|raw }}
