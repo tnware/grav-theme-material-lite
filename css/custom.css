@@ -256,3 +256,10 @@ ul.mdl-mega-footer__link-list li
 {margin:2px;}
 
 .fix{position: fixed}
+
+.mdl-mega-footer__link-list {
+    display: flex!important; 
+}
+  .mdl-mega-footer__link-list li {
+    margin: 0 5px; 
+  }
