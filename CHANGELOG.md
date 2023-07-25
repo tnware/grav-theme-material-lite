@@ -1,3 +1,8 @@
+# v0.2
+## 25/07/2023
+* theme is updated so it can run normally
+* some visual fixes for icons
+
 # v0.1.8
 ##  02/06/2018
 1. [](#new)
