@@ -1,6 +1,7 @@
 # v0.2
 ## 25/07/2023
 * theme is updated so it can run normally
+* updated font-awesome
 * some visual fixes for icons
 
 # v0.1.8
