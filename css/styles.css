@@ -69,6 +69,16 @@
 }
 .card-wide > .mdl-card__menu {
   color: #fff;
-}
 
 img {max-width: 100%;}
+
+.center {  
+  display: grid;
+  justify-content: center;
+  align-content: center;}
+
+.wrap {
+display: flex;
+flex-wrap: wrap;
+justify-content: space-evenly;}    
+}  
