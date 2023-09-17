@@ -4,7 +4,7 @@
         <div class="mdl-mega-footer__drop-down-section">
             <input class="mdl-mega-footer__heading-checkbox" type="checkbox" checked>
             <h1 class="mdl-mega-footer__heading">Navigation</h1>
-            <ul class="mdl-mega-footer__link-list">
+            <ul class="mdl-mega-footer__link-list wrap">
                 {% for page in pages.children %} {% if page.visible %} {% set current_page = (page.active or page.activeChild) ? 'active' : '' %}
                 <li><a href="{{ page.url }}">{{ page.menu }}</a></li>
                 {% endif %} {% endfor %}
