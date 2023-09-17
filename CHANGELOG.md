@@ -1,8 +1,15 @@
+# v0.3
+## 18/09/2023
+1. [](#improved)
+    * centering of item
+    * wrapping of footer menu links 
+      
 # v0.2
-## 25/07/2023
-* theme is updated so it can run normally
-* updated font-awesome
-* some visual fixes for icons
+## 07/25/2023
+1. [](#improved)
+    * theme is updated so it can run normally
+    * updated font-awesome
+    * some visual fixes for icons
 
 # v0.1.8
 ##  02/06/2018
