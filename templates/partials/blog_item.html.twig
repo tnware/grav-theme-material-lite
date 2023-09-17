@@ -12,7 +12,7 @@
   </span>
 
   <div class="e-content">
-     {{ truncate ? page.content|safe_truncate(120, true) : page.content }}
+     {{ truncate ? page.content|safe_truncate(120, true) : page.content|raw }}
   </div>
 
   </div>
