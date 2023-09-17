@@ -4,13 +4,6 @@
   </div>
   <div class="mdl-card__supporting-text">
 
-  <span class="list-blog-date">
-      <time class="dt-published" datetime="{{ page.date|date("c") }}">
-          <span>{{ page.date|date("d") }}</span>
-          <em>{{ page.date|date("M") }}</em>
-      </time>
-  </span>
-
   <div class="e-content">
      {{ truncate ? page.content|safe_truncate(120, true) : page.content|raw }}
   </div>
@@ -22,9 +15,12 @@
     </a>
   </div>
   <div class="mdl-card__menu">
-    <button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect">
-      <i class="material-icons">share</i>
-    </button>
+   <span class="list-blog-date">
+      <time class="dt-published" datetime="{{ page.date|date("c") }}">
+          <span>{{ page.date|date("d") }}</span>
+          <em>{{ page.date|date("M") }}</em>
+      </time>
+  </span>
   </div>
 </div>
 
