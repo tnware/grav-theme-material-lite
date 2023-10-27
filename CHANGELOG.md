@@ -1,3 +1,9 @@
+# v0.4
+## 27/100/2023
+1. [](#improved)
+    * better scroll to top
+    * some visual fixes
+    * 
 # v0.3
 ## 18/09/2023
 1. [](#improved)
