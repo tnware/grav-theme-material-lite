@@ -1,12 +1,12 @@
 <footer class="mdl-mega-footer">
-    <div class="mdl-mega-footer__middle-section">
+    <div class="mdl-mega-footer__middle-section wrap">
 
         <div class="mdl-mega-footer__drop-down-section">
             <input class="mdl-mega-footer__heading-checkbox" type="checkbox" checked>
             <h1 class="mdl-mega-footer__heading">Navigation</h1>
             <ul class="mdl-mega-footer__link-list wrap">
                 {% for page in pages.children %} {% if page.visible %} {% set current_page = (page.active or page.activeChild) ? 'active' : '' %}
-                <li><a href="{{ page.url }}">{{ page.menu }}</a></li>
+                <li><a href="{{ page.url }}">{{ page.menu }}</a></li>  · 
                 {% endif %} {% endfor %}
             </ul>
         </div>
@@ -16,11 +16,11 @@
            <input class="mdl-mega-footer__heading-checkbox" type="checkbox" checked>
            <h1 class="mdl-mega-footer__heading">Social Media</h1>
              <ul class="mdl-mega-footer__link-list">
-              <li><a href="{{ config.theme.fburl }}"><i class="fab fa-facebook fa-3x"></i></a></li>
-              <li><a href="{{ config.theme.linkedinurl }}"><i class="fab fa-linkedin fa-3x"></i></a></li>
-              <li><a href="{{ config.theme.twitterurl }}"><i class="fab fa-twitter fa-3x"></i></a></li>
-              <li><a href="{{ config.theme.gplusurl }}"><i class="fab fa-google-plus fa-3x"></i> </a></li>
-              <li><a href="{{ config.theme.discordurl }}"><i class="fab fa-discord fa-3x"></i></a></li>
+              <li><a href="{{ config.theme.fburl }}"><i class="fab fa-facebook fa-2x"></i></a></li>
+              <li><a href="{{ config.theme.linkedinurl }}"><i class="fab fa-linkedin fa-2x"></i></a></li>
+              <li><a href="{{ config.theme.twitterurl }}"><i class="fab fa-twitter fa-2x"></i></a></li>
+              <li><a href="{{ config.theme.gplusurl }}"><i class="fab fa-google-plus fa-2x"></i> </a></li>
+              <li><a href="{{ config.theme.discordurl }}"><i class="fab fa-discord fa-2x"></i></a></li>
 
             </ul>
         </div>

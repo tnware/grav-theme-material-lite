@@ -30,6 +30,7 @@
 {% do assets.addCss('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css') %}
 {% do assets.addCss('theme://css/styles.css') %}
 {% do assets.addCss('theme://css/custom.css') %}
+{% do assets.addCss('theme://css/ue-scroll.min.css') %}
 
 {% endblock %}
 
@@ -40,6 +41,10 @@
 
 {% block javascripts %}
 {% do assets.addJs('jquery') %}
+{% do assets.addJs('https://unpkg.com/swup@4') %}
+{% do assets.addJs('theme://js/ue-scroll.min.js') %}
+{% do assets.addJs('theme://js/material.min.js', { group:'after' }) %}
 {% endblock %}
 
 {{ assets.js()|raw }}
+
