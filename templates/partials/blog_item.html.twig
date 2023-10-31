@@ -4,7 +4,7 @@
   </div>
   <div class="mdl-card__supporting-text">
   <div class="e-content">
-     {{ truncate ? page.content|safe_truncate(120, true) : page.content|raw }}
+     {{ truncate ? page.content|safe_truncate(120, true)|raw }}
   </div>
   </div>
   <div class="mdl-card__actions mdl-card--border">
