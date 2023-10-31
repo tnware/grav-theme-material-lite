@@ -1,9 +1,9 @@
 name: Material Lite
-version: 0.4
+version: 0.5
 description: Material Lite is a lightweight theme reflecting Google's Material Design standards.
 icon: rebel
 author:
-  name: Tyler Woods
+  name: Tyler Woods & diomed
   email: tyler@tylermade.net
 homepage: https://tylermade.net
 keywords: grav, theme, material, etc
